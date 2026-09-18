@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | Regyana Bed & Breakfast</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<header>
+    <div class="header-inner">
+        <div class="brand"><img src="Images/logo.png" alt="Regyana Bed & Breakfast logo"><div><h1>Regyana Bed & Breakfast</h1><p class="tagline">Comfort • Hospitality • Memorable Experiences</p></div></div>
+        <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about_us.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a class="active" href="enquiry.html" aria-current="page">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    </div>
+</header>
+
+<main>
+    <section class="card"><h2>Make an Enquiry</h2><p><strong>We would love to hear from you!</strong></p><p>Complete the form below to enquire about accommodation, breakfast, catering or event decoration services.</p></section>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label><input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            <label for="email">Email Address:</label><input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="phone">Phone Number:</label><input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Service Information</legend>
+            <label for="service">What are you enquiring about?</label>
+            <select id="service" name="service" required><option value="">-- Select a Service --</option><option value="accommodation">Accommodation</option><option value="breakfast">Breakfast</option><option value="catering">Catering Services</option><option value="decoration">Event Décor</option><option value="party">Party / Celebration</option><option value="baby-shower">Baby Shower</option><option value="other">Other</option></select>
+            <label for="date">Preferred Date:</label><input type="date" id="date" name="date">
+            <label for="guests">Number of Guests:</label><input type="number" id="guests" name="guests" min="1" placeholder="Number of guests">
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Enquiry</legend>
+            <label for="message">Please tell us what you need:</label>
+            <textarea id="message" name="message" placeholder="Type your enquiry here..." required></textarea>
+        </fieldset>
+
+        <div class="form-actions"><input type="submit" value="Submit Enquiry"><input type="reset" value="Clear Form"></div>
+    </form>
+</main>
+
+<footer><p><strong>Regyana Bed & Breakfast</strong></p><p>Comfort, Hospitality & Memorable Experiences</p><p>&copy; 2026 Regyana Bed & Breakfast. All Rights Reserved.</p></footer>
+</body>
+</html>
